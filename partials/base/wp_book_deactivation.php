@@ -1,5 +1,6 @@
 <?php
 namespace partials\base;
+
 class wp_book_deactivation{
     public static function deactive(){
 

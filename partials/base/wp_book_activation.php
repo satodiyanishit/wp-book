@@ -2,6 +2,7 @@
 
 namespace partials\base;
 use partials\api\Meta_Table;
+
 class wp_book_activation{
     public static function active(){
         //create book meta table

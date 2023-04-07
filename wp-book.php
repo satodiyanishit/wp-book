@@ -13,6 +13,7 @@ if(!defined('ABSPATH')){
     die();
 }
 
+
 //function called upon activation of plugin
 function wp_book_activation_func(){
     partials\base\wp_book_activation::active();
@@ -20,11 +21,11 @@ function wp_book_activation_func(){
 register_activation_hook(__FILE__, 'wp_book_activation_func' );
 
 function wp_book_deactivation_func(){
-    partials\base\wp_book_deactivation::active();
+    partials\base\wp_book_deactivation::deactive();
 }
 register_deactivation_hook(__FILE__, 'wp_book_deactivation_func' );
 
 //register all services for plugin
-if( class_exists( 'partials\\init' ) ) {
-    partials\init::register_services();
-}
+// if( class_exists( 'partials\\init' ) ) {
+//     partials\init::register_services();
+// }
