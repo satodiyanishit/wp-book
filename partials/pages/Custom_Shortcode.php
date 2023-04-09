@@ -34,17 +34,17 @@ class Custon_Shortcode{
 
     $args = array(
         'post_type' => 'book',
-    )
+    );
 
     //check if id available and if yes then add it into the taxo array
-    if( isset( $attr['id'] ) ) {
+    if( isset( $attr['id'])) {
         $ids[] = $attr['id'];
     }
 
     //check if category available and if yes then add it into the taxo array
     if( isset( $attr['category'] ) ) {
         $taxo[] = array(
-            'taxonomy' => 'book-categories';
+            'taxonomy' => 'book-categories',
             'field' => 'slug',
             'terms' => $attr['category'],
         );
@@ -53,7 +53,7 @@ class Custon_Shortcode{
     //check if tag available and if yes then add it into the taxo array
     if( isset( $attr['tag'] ) ) {
         $taxo[] = array(
-            'taxonomy' => 'book-tags';
+            'taxonomy' => 'book-tags',
             'field' => 'slug',
             'terms' => $attr['tag'],
         );
