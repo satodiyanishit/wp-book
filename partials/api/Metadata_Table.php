@@ -1,8 +1,9 @@
 <?php
 
 namespace partials\api;
+// use partials\base\wp_book_activation;
 
-class Meta_Table{
+class Metadata_Table{
     //create a custom meta table for book
 
     public static function create_table(){
@@ -11,7 +12,7 @@ class Meta_Table{
         $wpdb_collate = $wpdb->collate;
 
         //check if table is already created
-        if($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name){
+        if($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name){ 
             $q = "CREATE TABLE {$table_name} (
                 meta_id bigint(20) NOT NULL AUTO_INCREMENT,
                 book_id bigint(20) NOT NULL DEFAULT 0,
