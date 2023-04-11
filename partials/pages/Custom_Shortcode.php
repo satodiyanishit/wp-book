@@ -2,7 +2,7 @@
 
 namespace partials\pages;
 
-class Custon_Shortcode{
+class Custom_Shortcode{
 
     //register all shortcode
     public function register(){

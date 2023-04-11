@@ -1,7 +1,7 @@
 <?php
 
 namespace partials\api;
-// use partials\base\wp_book_activation;
+
 
 class Metadata_Table{
     //create a custom meta table for book
