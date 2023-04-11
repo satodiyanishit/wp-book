@@ -99,5 +99,4 @@ class admin_CPT{
             'most_used'         => __( 'Most Used Book ' . $type . 's', 'wp-book' ),
         ];
     }
-
 }
